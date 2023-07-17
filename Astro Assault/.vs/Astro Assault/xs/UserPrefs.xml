@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{E6ABF9C4-2FCF-CD13-FABE-5D9452DBD392}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player Movement.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Player Script.cs" Line="47" Column="6" />
+      <File FileName="Assets/Scripts/Player Movement.cs" Line="41" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Astro Assault" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Player Movement.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3bd1cf5a-878f-4322-88d4-5c010aa8728a" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
