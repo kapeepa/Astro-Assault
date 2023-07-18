@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Range(1, 100)] public float speed;
     int currentJumps;
+    int currentTeleports;
     Rigidbody rb;
 
 
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         currentJumps = 0;
+        currentTeleports = 0;
         rb = GetComponent<Rigidbody>();
 
         facingLeft = false;
@@ -87,5 +89,19 @@ public class PlayerMovement : MonoBehaviour
     public void ResetJump()
     {
         currentJumps = 0;
+    }
+
+    public void Teleport()
+    {
+        if (currentTeleports < 2)
+        {
+            if (facingLeft) transform.Translate(-3, 0, 0, Space.World);
+            if (facingRight) transform.Translate(3, 0, 0, Space.World);
+            if (facingForward) transform.Translate(0, 0, 3, Space.World);
+            if (facingBack) transform.Translate(0, 0, -3, Space.World);
+        }
+
+        currentTeleports++;
+
     }
 }
