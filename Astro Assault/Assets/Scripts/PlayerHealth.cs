@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     public HealthBar healthBar;
     public PlayerScript playerScript;
 
+    public AudioClip damageClip;
+
     private void OnEnable()
     {
         curHealth = maxHealth;
@@ -23,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
     {
         curHealth -= damage;
         healthBar.SetHealth(curHealth);
+        AudioManager.Instance.PlaySFX(damageClip);
     }
 
     private void Update()

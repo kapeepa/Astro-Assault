@@ -1183,6 +1183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportClip: {fileID: 8300000, guid: 2a8de2b25e16d4ecdb0e46fb4e1bc7f7, type: 3}
+  jumpClip: {fileID: 8300000, guid: f9f94590f66b94ee99ad9ffe42cf38b0, type: 3}
 --- !u!114 &558053898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1199,6 +1200,7 @@ MonoBehaviour:
   maxHealth: 100
   healthBar: {fileID: 543934364}
   playerScript: {fileID: 558053896}
+  damageClip: {fileID: 8300000, guid: c02c09b4459484e70b55daf77e477797, type: 3}
 --- !u!1 &853790015
 GameObject:
   m_ObjectHideFlags: 0

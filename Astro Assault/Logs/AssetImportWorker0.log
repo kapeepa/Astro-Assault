@@ -1161,3 +1161,149 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1078.724631 seconds.
+  path: Assets/Sounds/BBEG Challenges Nothing Dialogue.wav
+  artifactKey: Guid(6d40ee918d8b64b59bfa2fa7758cf254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/BBEG Challenges Nothing Dialogue.wav using Guid(6d40ee918d8b64b59bfa2fa7758cf254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '974e653d445fc0508471171758e89d1d') in 0.612191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.312819 seconds.
+  path: Assets/Sounds/BBEG Hurt.wav
+  artifactKey: Guid(a240178f166a8447ba8cde57d8781fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/BBEG Hurt.wav using Guid(a240178f166a8447ba8cde57d8781fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e72acfbc416cbddbfd957226a1ba24') in 0.017587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.105494 seconds.
+  path: Assets/Sounds/BBEG Past My Challenges Dialogue.wav
+  artifactKey: Guid(1c085328029034922a300f33e865ef3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/BBEG Past My Challenges Dialogue.wav using Guid(1c085328029034922a300f33e865ef3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90587852528422e5965b509a2b2d0839') in 0.021263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.805694 seconds.
+  path: Assets/Sounds/BBEG Yell.wav
+  artifactKey: Guid(4edabd2ab37bb4f4496bb073ddefbb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/BBEG Yell.wav using Guid(4edabd2ab37bb4f4496bb073ddefbb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e65d47280d9d67a9a19c6d0bb2f93495') in 0.019352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.503978 seconds.
+  path: Assets/Sounds/Space Cop Hurt.wav
+  artifactKey: Guid(c02c09b4459484e70b55daf77e477797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Space Cop Hurt.wav using Guid(c02c09b4459484e70b55daf77e477797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2447901619782b0659c5c97354faf0e') in 0.014544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.951934 seconds.
+  path: Assets/Sounds/Space Cop Jump.wav
+  artifactKey: Guid(f9f94590f66b94ee99ad9ffe42cf38b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Space Cop Jump.wav using Guid(f9f94590f66b94ee99ad9ffe42cf38b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2744d84679f1972b490a03725bf640b') in 0.017237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.768285 seconds.
+  path: Assets/Sounds/Tutorial Laser Shoot Enemy.wav
+  artifactKey: Guid(c167ae1f27d3549a1ac71dfa7d6d2f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Tutorial Laser Shoot Enemy.wav using Guid(c167ae1f27d3549a1ac71dfa7d6d2f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27db5a3e0911bdfcc2524a76f7889fa0') in 0.011910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Sounds/Tutorial Press Spcae Bar.wav
+  artifactKey: Guid(cb8f9405a5e4444b28badb4a7f303f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Tutorial Press Spcae Bar.wav using Guid(cb8f9405a5e4444b28badb4a7f303f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec8d004b55ce9a4227bed2c257fa351') in 0.018315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Sounds/Tutorial Teleport.wav
+  artifactKey: Guid(ee53f6d9d3fde447f89480c7f1fdfe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Tutorial Teleport.wav using Guid(ee53f6d9d3fde447f89480c7f1fdfe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121898321dc1969d0c0b83e7683222d4') in 0.009837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Sounds/Tutorial Welcome Dialogue.wav
+  artifactKey: Guid(a6d753c7dad80461e875f2d07e52b292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Tutorial Welcome Dialogue.wav using Guid(a6d753c7dad80461e875f2d07e52b292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06c9bc80b7ae23e1cd089d603649d90') in 0.021314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Sounds/Tutorial Nice Work.wav
+  artifactKey: Guid(0a7c37005e48443a38782c50eceed61c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Tutorial Nice Work.wav using Guid(0a7c37005e48443a38782c50eceed61c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75c9682860b08babacfecec4eff7097') in 0.018887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.117854 seconds.
+  path: Assets/Sounds/Space Cop
+  artifactKey: Guid(50bcaad230418446098f1fc3cf9bb3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Space Cop using Guid(50bcaad230418446098f1fc3cf9bb3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '176950d7033697165d54b10e49bd4c8b') in 0.001515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.988444 seconds.
+  path: Assets/Sounds/Space Cop Actions
+  artifactKey: Guid(50bcaad230418446098f1fc3cf9bb3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Space Cop Actions using Guid(50bcaad230418446098f1fc3cf9bb3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f91be7d574ef1d0a30a0e8dae064c28') in 0.000867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.413949 seconds.
+  path: Assets/Sounds/Tutorial
+  artifactKey: Guid(d8342d9bce3134f0fa1c847b1a3923b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Tutorial using Guid(d8342d9bce3134f0fa1c847b1a3923b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ee23080f0b2f7345e2c1fcceeb69d9') in 0.002068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.811008 seconds.
+  path: Assets/Sounds/BBEG
+  artifactKey: Guid(52e43960a5d214186b5dab2e7c1b185a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/BBEG using Guid(52e43960a5d214186b5dab2e7c1b185a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '445ddc73fc23c871ce59ef8304661727') in 0.002206 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001081 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.411 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1414ms)
+		BeginReloadAssembly (250ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (139ms)
+		EndReloadAssembly (1080ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (416ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (390ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (240ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1323 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.8 MB.
+System memory in use after: 98.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1907.
+Total: 2.895977 ms (FindLiveObjects: 0.160454 ms CreateObjectMapping: 0.043674 ms MarkObjects: 2.615351 ms  DeleteObjects: 0.075677 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

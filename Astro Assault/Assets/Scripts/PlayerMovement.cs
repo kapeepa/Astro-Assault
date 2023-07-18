@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     int teleportCount;
     Rigidbody rb;
     public AudioClip teleportClip;
+    public AudioClip jumpClip;
 
 
     private bool facingLeft = false;
@@ -79,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(0, 20, 0, ForceMode.Impulse);
             jumpCount--;
+            AudioManager.Instance.PlaySFX(jumpClip);
         }
     }
 
