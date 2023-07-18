@@ -44,7 +44,10 @@ public class CollisionScript : MonoBehaviour
                 onLaserTrigger.Invoke();
                 break;
             default:
-                onTrigger.Invoke();
+                if (tag != "Player")
+                {
+                    onTrigger.Invoke();
+                }
                 break;
         }
     }
