@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Rigidbody))]
 public class CollisionScript : MonoBehaviour
 {
     public UnityEvent onCollide;
@@ -12,6 +13,7 @@ public class CollisionScript : MonoBehaviour
 
     public UnityEvent onTrigger;
     public UnityEvent onLaserTrigger;
+
 
     private void OnCollisionEnter(Collision other)
     {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17710009, g: 0.21491466, b: 0.26502994, a: 1}
+  m_IndirectSpecularColor: {r: 0.15533467, g: 0.17740329, b: 0.18999289, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -437,13 +437,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162217942}
-  m_LocalRotation: {x: 0.9933938, y: -0, z: -0, w: 0.114755824}
+  m_LocalRotation: {x: -0.039009023, y: -0, z: -0, w: -0.9992389}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 166.821, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 364.471, y: 0, z: 0}
 --- !u!1 &233516026
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,7 +852,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 84
+  field of view: 33
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -877,13 +877,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429219343}
-  m_LocalRotation: {x: 0.36459738, y: -0, z: -0, w: 0.9311653}
-  m_LocalPosition: {x: 0.65, y: 7.47, z: -21.98}
+  m_LocalRotation: {x: -0.19155128, y: -0.008247469, z: 0.0016096815, w: -0.9814467}
+  m_LocalPosition: {x: -0.9, y: 8.45, z: -30.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 42.766, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 22.087, y: 0.963, z: 0}
 --- !u!1 &543934362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,6 +1524,7 @@ GameObject:
   - component: {fileID: 1753870309}
   - component: {fileID: 1753870308}
   - component: {fileID: 1753870307}
+  - component: {fileID: 1753870311}
   - component: {fileID: 1753870306}
   m_Layer: 0
   m_Name: PlaceholderEnemy
@@ -1662,3 +1663,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1753870311
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753870305}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
