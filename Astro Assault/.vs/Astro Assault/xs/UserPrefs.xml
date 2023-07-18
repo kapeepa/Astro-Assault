@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{E6ABF9C4-2FCF-CD13-FABE-5D9452DBD392}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player Movement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AudioManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player Script.cs" Line="47" Column="6" />
-      <File FileName="Assets/Scripts/Player Movement.cs" Line="41" Column="6" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="4" Column="26" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/AudioManager.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +11,7 @@
           <Node name="Astro Assault" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Player Movement.cs" selected="True" />
+                <Node name="AudioManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
