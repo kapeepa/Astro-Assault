@@ -6,31 +6,27 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    [Range(1, 100)] public float speed;
-    int currentJumps;
-    int currentTeleports;
+    float speed = 5;
+    int jumpCount;
+    int teleportCount;
     Rigidbody rb;
+    public AudioClip teleportClip;
 
 
-    private bool facingLeft;
+    private bool facingLeft = false;
     Vector3 leftRotation = new Vector3(0, -90, 0);
-    private bool facingRight;
+    private bool facingRight = false;
     Vector3 rightRotation = new Vector3(0, 90, 0);
-    private bool facingForward;
+    private bool facingForward = true;
     Vector3 forwardRotation = new Vector3(0, 0, 0);
-    private bool facingBack;
+    private bool facingBack = false;
     Vector3 backRotation = new Vector3(0, 180, 0);
 
     void Start()
     {
-        currentJumps = 0;
-        currentTeleports = 0;
+        ResetJump();
+        ResetTeleport();
         rb = GetComponent<Rigidbody>();
-
-        facingLeft = false;
-        facingRight = false;
-        facingForward = true;
-        facingBack = false;
     }
 
     public void MoveForwardBack(float axis)
@@ -79,29 +75,35 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        if(currentJumps < 1)
+        if(jumpCount > 0)
         {
             rb.AddForce(0, 20, 0, ForceMode.Impulse);
-            currentJumps++;
+            jumpCount--;
         }
     }
 
     public void ResetJump()
     {
-        currentJumps = 0;
+        jumpCount = 1;
+    }
+
+    public void ResetTeleport()
+    {
+        teleportCount = 2;
     }
 
     public void Teleport()
     {
-        if (currentTeleports < 2)
+        if (teleportCount > 0)
         {
+            AudioManager.Instance.PlaySFX(teleportClip);
             if (facingLeft) transform.Translate(-3, 0, 0, Space.World);
             if (facingRight) transform.Translate(3, 0, 0, Space.World);
             if (facingForward) transform.Translate(0, 0, 3, Space.World);
             if (facingBack) transform.Translate(0, 0, -3, Space.World);
         }
 
-        currentTeleports++;
+        teleportCount--;
 
     }
 }

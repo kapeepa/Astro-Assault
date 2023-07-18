@@ -62,6 +62,8 @@
     <Compile Include="Assets/Scripts/CollisionScript.cs" />
     <Compile Include="Assets/Scripts/LevelManager.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
+    <Compile Include="Assets/Scripts/ShooterScript.cs" />
+    <Compile Include="Assets/Scripts/ProjectileScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

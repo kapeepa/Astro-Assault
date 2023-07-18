@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.014398404, g: 0.011231432, b: 0.008203684, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,8 +135,9 @@ GameObject:
   - component: {fileID: 58130642}
   - component: {fileID: 58130641}
   - component: {fileID: 58130640}
+  - component: {fileID: 58130643}
   m_Layer: 0
-  m_Name: Placeholder Hat
+  m_Name: Placeholder Shooter
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,13 +150,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58130638}
-  m_LocalRotation: {x: 0.3440689, y: -0.61775124, z: -0.3440689, w: 0.61775124}
-  m_LocalPosition: {x: 0.041, y: 0.552, z: 0.084}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0.041, y: 0.648, z: 0.19}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 558053893}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -58.233}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 90}
 --- !u!136 &58130640
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -219,6 +220,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58130638}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &58130643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58130638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7604471f649a4454981bee72c16b356b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onShoot:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 58130643}
+        m_TargetAssemblyTypeName: ShooterScript, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  laser: {fileID: 3417087577391001974, guid: fb08b1fd0e5344181a1b9e8865b9e0f6, type: 3}
+  fireClip: {fileID: 8300000, guid: fd33e688dc20c488b89bad910ff52a44, type: 3}
+  canShoot: 1
+  timeBetweenShots: 1.25
 --- !u!1 &162217942
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,13 +337,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162217942}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.995548, y: -0, z: -0, w: -0.09425613}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 190.817, y: 0, z: 0}
 --- !u!1 &276511537
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +813,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &558053896
 MonoBehaviour:
@@ -842,7 +874,19 @@ MonoBehaviour:
         m_CallState: 2
   onFirePressed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 58130643}
+        m_TargetAssemblyTypeName: ShooterScript, Assembly-CSharp
+        m_MethodName: Shoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTeleportPressed:
     m_PersistentCalls:
       m_Calls:
@@ -870,7 +914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4beee9eafe4c740ab8cc759dcbcf85d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  teleportClip: {fileID: 8300000, guid: 2a8de2b25e16d4ecdb0e46fb4e1bc7f7, type: 3}
 --- !u!1 &853790015
 GameObject:
   m_ObjectHideFlags: 0

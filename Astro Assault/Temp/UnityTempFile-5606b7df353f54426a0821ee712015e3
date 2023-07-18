@@ -320,3 +320,4 @@
 "Assets/Scripts/LevelManager.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerScript.cs"
+"Assets/Scripts/ShooterScript.cs"

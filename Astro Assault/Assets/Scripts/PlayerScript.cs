@@ -14,8 +14,11 @@ public class PlayerScript : MonoBehaviour
     public UnityEvent onFirePressed;
     public UnityEvent onTeleportPressed;
 
+    int currentHealth;
+
     private void Start()
     {
+        ResetHealth();
         GetComponent<PlayerScript>().enabled = true;
     }
 
@@ -36,6 +39,11 @@ public class PlayerScript : MonoBehaviour
     public void Die()
     {
         GetComponent<PlayerScript>().enabled = false;
+    }
+
+    public void ResetHealth()
+    {
+        currentHealth = 3;
     }
 
 
