@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     float speed = 5;
     int jumpCount;
-    int teleportCount;
+    public int teleportCount;
     Rigidbody rb;
     public AudioClip teleportClip;
     public AudioClip jumpClip;
@@ -23,10 +23,14 @@ public class PlayerMovement : MonoBehaviour
     private bool facingBack = false;
     Vector3 backRotation = new Vector3(0, 180, 0);
 
-    void Start()
+    private void Awake()
     {
         ResetJump();
         ResetTeleport();
+    }
+
+    void Start()
+    {
         rb = GetComponent<Rigidbody>();
     }
 

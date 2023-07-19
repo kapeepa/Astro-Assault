@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
 
     public AudioClip damageClip;
 
-    private void OnEnable()
+    private void Awake()
     {
         curHealth = maxHealth;
     }
