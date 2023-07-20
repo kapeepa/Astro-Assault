@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip teleportClip;
     public AudioClip jumpClip;
 
+    public PlayerScript playerScript;
+
     private bool facingLeft = false;
     Vector3 leftRotation = new Vector3(0, -90, 0);
     private bool facingRight = false;
@@ -35,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveForwardBack(float axis)
     {
-        if (axis > 0 && !facingForward)
+        if (axis > 0 && !facingForward && playerScript.animator.GetBool("isGrounded"))
         {
             transform.eulerAngles = forwardRotation;
             facingLeft = false;
@@ -43,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
             facingForward = true;
             facingBack = false;
         }
-        else if (axis < 0 && !facingBack)
+        else if (axis < 0 && !facingBack && playerScript.animator.GetBool("isGrounded"))
         {
             transform.eulerAngles = backRotation;
             facingLeft = false;
@@ -57,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveLeftRight(float axis)
     {
-        if (axis > 0 && !facingRight)
+        if (axis > 0 && !facingRight && playerScript.animator.GetBool("isGrounded"))
         {
             transform.eulerAngles = rightRotation;
             facingLeft = false;
@@ -65,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
             facingForward = false;
             facingBack = false;
         }
-        else if (axis < 0 && !facingLeft)
+        else if (axis < 0 && !facingLeft && playerScript.animator.GetBool("isGrounded"))
         {
             transform.eulerAngles = leftRotation;
             facingLeft = true;

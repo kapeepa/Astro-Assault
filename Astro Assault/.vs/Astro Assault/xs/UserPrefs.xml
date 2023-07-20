@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{E6ABF9C4-2FCF-CD13-FABE-5D9452DBD392}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Voicelinescript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/Voicelinescript.cs" Line="18" Column="39" />
+      <File FileName="Assets/Scripts/UIScript.cs" Line="17" Column="24" />
+      <File FileName="Assets/Scripts/PlayerScript.cs" Line="55" Column="116" />
+      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="35" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Astro Assault" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
+            <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="UI Scripts" expanded="True" />
+                <Node name="PlayerScript.cs" selected="True" />
               </Node>
             </Node>
           </Node>

@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (curHealth <= 0)
         {
-            playerScript.Die();
+            playerScript.DisablePlayer();
             GameManager.Instance.GameOver();
         }
     }

@@ -38,7 +38,6 @@ public class ShooterScript : MonoBehaviour
         {
             AudioManager.Instance.PlaySFX(fireClip);
             Instantiate(laser, this.transform.position, this.transform.rotation);
-            Debug.Log(this.transform.rotation.eulerAngles);
             canShoot = false;
             timeUntilNextShot = Time.time + timeBetweenShots;
             ammoCount--;
