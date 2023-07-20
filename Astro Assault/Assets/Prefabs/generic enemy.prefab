@@ -473,6 +473,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2469382875885554431}
   - component: {fileID: 1994537921383319362}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 7991786648694702223}
+>>>>>>> tutorial
   m_Layer: 8
   m_Name: generic enemy
   m_TagString: Player
@@ -518,6 +522,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+<<<<<<< HEAD
+=======
+--- !u!65 &7991786648694702223
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660159886204189523}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42556188, y: 1.9346735, z: 0.69477415}
+  m_Center: {x: -0.05971459, y: 0.9114871, z: -0.06392004}
+>>>>>>> tutorial
 --- !u!1 &1816073097072834656
 GameObject:
   m_ObjectHideFlags: 0

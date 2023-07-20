@@ -1,5 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> tutorial
 --- !u!1 &473138391303854393
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,7 +20,11 @@ GameObject:
   - component: {fileID: 7377967202510752380}
   m_Layer: 0
   m_Name: Cylinder
+<<<<<<< HEAD
   m_TagString: Untagged
+=======
+  m_TagString: Laser
+>>>>>>> tutorial
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,10 +102,17 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
+<<<<<<< HEAD
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+=======
+  m_Radius: 6.065305
+  m_Height: 5.1081557
+  m_Direction: 1
+  m_Center: {x: -0.024291873, y: -0.056237146, z: -0.15455176}
+>>>>>>> tutorial
 --- !u!54 &7377967202510752380
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -113,6 +129,10 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> tutorial
 --- !u!1 &1049014626867491693
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +331,7 @@ GameObject:
   - component: {fileID: 4150746196446008904}
   m_Layer: 0
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
