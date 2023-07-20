@@ -15,8 +15,11 @@ public class Voicelinescript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        source.Play();
-        this.GetComponent<Collider>().enabled = false;
+        if (collision.gameObject.tag == "Player")
+        {
+            source.Play();
+            this.GetComponent<Collider>().enabled = false;
+        }
     }
 
 }
