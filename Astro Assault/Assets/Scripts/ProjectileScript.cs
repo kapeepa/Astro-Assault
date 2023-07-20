@@ -9,13 +9,13 @@ public class ProjectileScript : MonoBehaviour
 
     private void Start()
     {
-        transform.Translate(0, 10, 0, Space.World);
-        transform.Translate(0.3f, 0, 0, Space.Self);
+        transform.Translate(0, 9.4f, 0, Space.World);
+        transform.Translate(0.3f, 0, 1.4f, Space.Self);
         Destroy(this.gameObject, duration);
     }
 
     void Update()
     {
-        transform.Translate(0, speed * Time.deltaTime, 0, Space.Self);
+        transform.Translate(0, 0, speed * Time.deltaTime, Space.Self);
     }
 }

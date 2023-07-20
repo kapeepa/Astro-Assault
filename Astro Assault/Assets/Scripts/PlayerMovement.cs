@@ -80,7 +80,6 @@ public class PlayerMovement : MonoBehaviour
     //fed clip from OnFootstep animation event
     public void OnFootstep(AudioClip clip)
     {
-        Debug.Log("Footstep called");
         AudioManager.Instance.PlaySFX(clip);
     }
 

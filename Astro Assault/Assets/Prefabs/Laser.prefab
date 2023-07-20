@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5226651793189637681}
   - component: {fileID: 8557690044303246132}
   - component: {fileID: 7377967202510752380}
-  - component: {fileID: 7666787520145823788}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -114,18 +113,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7666787520145823788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473138391303854393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40d2069a97fbf408faf8772b8f697ae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1049014626867491693
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +308,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3417087577391001970}
+  - component: {fileID: 4150746196446008904}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -345,3 +333,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4150746196446008904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3417087577391001974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d2069a97fbf408faf8772b8f697ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -15,10 +15,14 @@ public class TeleportBar : MonoBehaviour
 
     public void disableBars()
     {
-        if (!bar2.activeSelf)
+        if (!bar2.activeSelf && bar1.activeSelf)
         {
-            bar1.gameObject.SetActive(false);
+            bar1.SetActive(false);
         }
-        bar2.gameObject.SetActive(false);
+        else if (bar2.activeSelf)
+        {
+            bar2.SetActive(false);
+        }
+
     }
 }

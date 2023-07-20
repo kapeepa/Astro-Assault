@@ -15,6 +15,12 @@ public class CollisionScript : MonoBehaviour
     public UnityEvent onLaserTrigger;
 
     public AudioClip landClip;
+    float firstTime;
+
+    private void Start()
+    {
+        firstTime = Time.time + 1.5f;
+    }
 
     private void OnCollisionEnter(Collision other)
     {
@@ -27,7 +33,7 @@ public class CollisionScript : MonoBehaviour
                 break;
             case "Ground":
                 onGroundCollide.Invoke();
-                AudioManager.Instance.PlaySFX(landClip);
+                if (Time.time > firstTime) AudioManager.Instance.PlaySFX(landClip);
                 break;
             case "Player":
                 onPlayerCollide.Invoke();

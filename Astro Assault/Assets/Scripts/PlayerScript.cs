@@ -27,13 +27,13 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetButton("Vertical"))
         {
             animator.SetBool("isRun", true);
-            ForwardBackMove.Invoke(Input.GetAxis("Vertical"));
+             ForwardBackMove.Invoke(Input.GetAxis("Vertical"));
         }
 
         if (Input.GetButton("Horizontal"))
         {
-            animator.SetBool("isRun", true);
-            LeftRightMove.Invoke(Input.GetAxis("Horizontal"));
+                animator.SetBool("isRun", true);
+                LeftRightMove.Invoke(Input.GetAxis("Horizontal"));
         }
 
         if (Input.GetButtonUp("Vertical") || Input.GetButtonUp("Horizontal"))
@@ -54,6 +54,7 @@ public class PlayerScript : MonoBehaviour
 
     public void Die()
     {
+        animator.SetBool("alive", false);
         GetComponent<PlayerScript>().enabled = false;
     }
 
