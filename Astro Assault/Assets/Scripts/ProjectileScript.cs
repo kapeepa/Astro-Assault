@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class ProjectileScript : MonoBehaviour
 {
-    [Range(1, 80)] public float speed;
-    [Range(0, 1)] public float duration;
+    float speed = 40;
+    float duration = 0.75f;
 
     private void Start()
     {
+        transform.Translate(0, 10, 0, Space.World);
+        transform.Translate(0.3f, 0, 0, Space.Self);
         Destroy(this.gameObject, duration);
     }
 
     void Update()
     {
-        transform.Translate(0, -speed * Time.deltaTime, 0, Space.Self);
+        transform.Translate(0, speed * Time.deltaTime, 0, Space.Self);
     }
 }

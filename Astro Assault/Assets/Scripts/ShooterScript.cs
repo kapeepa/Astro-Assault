@@ -10,7 +10,7 @@ public class ShooterScript : MonoBehaviour
     public AudioClip fireClip;
 
     public bool canShoot = true;
-    [Range(0.0f, 2.0f)] public float timeBetweenShots;
+    float timeBetweenShots = 0.75f;
     private float timeUntilNextShot;
     int ammoCount;
 
@@ -38,6 +38,7 @@ public class ShooterScript : MonoBehaviour
         {
             AudioManager.Instance.PlaySFX(fireClip);
             Instantiate(laser, this.transform.position, this.transform.rotation);
+            Debug.Log(this.transform.rotation.eulerAngles);
             canShoot = false;
             timeUntilNextShot = Time.time + timeBetweenShots;
             ammoCount--;

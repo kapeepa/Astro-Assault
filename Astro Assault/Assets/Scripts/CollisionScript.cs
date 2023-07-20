@@ -14,7 +14,6 @@ public class CollisionScript : MonoBehaviour
     public UnityEvent onTrigger;
     public UnityEvent onLaserTrigger;
 
-
     private void OnCollisionEnter(Collision other)
     {
         string tag = other.gameObject.tag;
