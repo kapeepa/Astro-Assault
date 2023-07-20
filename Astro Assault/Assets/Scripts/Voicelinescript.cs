@@ -8,7 +8,7 @@ public class Voicelinescript : MonoBehaviour
 {
     public UnityEvent OnCollide;
     public AudioSource audiosource;
-    public Component collider;
+    public new Component collider;
     private void OnCollisionEnter(Collision collision)
     {
         audiosource.Play();

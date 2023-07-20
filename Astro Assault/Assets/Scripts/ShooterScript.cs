@@ -45,7 +45,7 @@ public class ShooterScript : MonoBehaviour
         }
     }
 
-    void ResetAmmo()
+    public void ResetAmmo()
     {
         ammoCount = 5;
     }

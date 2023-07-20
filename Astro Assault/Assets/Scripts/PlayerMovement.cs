@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    float speed = 10;
+    float speed = 7;
     int jumpCount;
     public int teleportCount;
     Rigidbody rb;
