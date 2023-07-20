@@ -6,13 +6,17 @@ using UnityEngine.Events;
 
 public class Voicelinescript : MonoBehaviour
 {
-    public UnityEvent OnCollide;
-    public AudioSource audiosource;
-    public Component collider;
+    public AudioSource source;
+
+    private void Awake()
+    {
+        this.GetComponent<Collider>().enabled = true;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        audiosource.Play();
-        Destroy(collider);
+        source.Play();
+        this.GetComponent<Collider>().enabled = false;
     }
 
 }
