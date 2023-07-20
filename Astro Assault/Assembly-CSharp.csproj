@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/ShooterScript.cs" />
+    <Compile Include="Assets/Scripts/UI Scripts/AmmoBar.cs" />
     <Compile Include="Assets/Scripts/PlayerScript.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/UI Scripts/HealthBar.cs" />
@@ -65,12 +66,10 @@
     <Compile Include="Assets/Scripts/CollisionScript.cs" />
     <Compile Include="Assets/Scripts/PlayerHealth.cs" />
     <Compile Include="Assets/Scripts/LevelManager.cs" />
+    <Compile Include="Assets/Scripts/Camerascript.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/UI Scripts/TeleportBar.cs" />
-    <Compile Include="Assets/Scripts/UI Scripts/AmmoBar.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets/StarterAssets/license.txt" />
+    <Compile Include="Assets/Scripts/Voicelinescript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
