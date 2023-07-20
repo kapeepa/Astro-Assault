@@ -217,7 +217,7 @@ RectTransform:
   - {fileID: 543934363}
   - {fileID: 670545703}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -315,7 +315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
 --- !u!1 &216190613
 GameObject:
@@ -962,7 +962,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1 &535156280
 GameObject:
@@ -1616,6 +1616,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 543934364}
     - target: {fileID: 1803293632670436520, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
+      propertyPath: landClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}
+    - target: {fileID: 1803293632670436520, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
       propertyPath: onGroundCollide.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1624,8 +1628,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1803293632670436520, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
+      propertyPath: onGroundCollide.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1547456471}
+    - target: {fileID: 1803293632670436520, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
       propertyPath: onGroundCollide.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: ResetGrounded
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803293632670436520, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
+      propertyPath: onGroundCollide.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803293632670436520, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
+      propertyPath: onGroundCollide.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2419410991423210791, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
       propertyPath: onShoot.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1633,7 +1649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
       propertyPath: m_LocalScale.x
@@ -1889,6 +1905,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3747148083246951656, guid: 87c7a34271ee444ef9b8df086c80d94f, type: 3}
   m_PrefabInstance: {fileID: 1306557975}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1547456471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4416926081852918481, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
+  m_PrefabInstance: {fileID: 1014646879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1553945526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2096,9 +2117,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onGroundTrigger:
-    m_PersistentCalls:
-      m_Calls: []
+  landClip: {fileID: 0}
 --- !u!65 &1753870307
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2201,7 +2220,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1165966555429630114, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
   m_PrefabInstance: {fileID: 1014646879}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1547456471}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdf68ba756418447db5e5bd8b18b9a4f, type: 3}
@@ -2212,7 +2231,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2419410991423210791, guid: ba4b9b38499284132ba3b9e559bd37dc, type: 3}
   m_PrefabInstance: {fileID: 1014646879}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1547456471}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7604471f649a4454981bee72c16b356b, type: 3}

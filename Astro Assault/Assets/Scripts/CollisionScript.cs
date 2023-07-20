@@ -14,6 +14,8 @@ public class CollisionScript : MonoBehaviour
     public UnityEvent onTrigger;
     public UnityEvent onLaserTrigger;
 
+    public AudioClip landClip;
+
     private void OnCollisionEnter(Collision other)
     {
         string tag = other.gameObject.tag;
@@ -25,6 +27,7 @@ public class CollisionScript : MonoBehaviour
                 break;
             case "Ground":
                 onGroundCollide.Invoke();
+                AudioManager.Instance.PlaySFX(landClip);
                 break;
             case "Player":
                 onPlayerCollide.Invoke();

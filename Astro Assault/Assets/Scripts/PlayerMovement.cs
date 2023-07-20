@@ -77,6 +77,13 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(speed * Time.deltaTime * axis, 0, 0, Space.World);
     }
 
+    //fed clip from OnFootstep animation event
+    public void OnFootstep(AudioClip clip)
+    {
+        Debug.Log("Footstep called");
+        AudioManager.Instance.PlaySFX(clip);
+    }
+
     public void Jump()
     {
         if(jumpCount > 0)
