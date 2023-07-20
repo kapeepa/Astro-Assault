@@ -58,14 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs" />
     <Compile Include="Assets/Scripts/ShooterScript.cs" />
-    <Compile Include="Assets/LowPoly Guns/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualTouchZone.cs" />
-    <Compile Include="Assets/LowPoly Guns/StarterAssets/Mobile/Scripts/Utilities/MobileDisableAutoSwitchControls.cs" />
-    <Compile Include="Assets/LowPoly Guns/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualJoystick.cs" />
     <Compile Include="Assets/Scripts/PlayerScript.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/UI Scripts/HealthBar.cs" />
     <Compile Include="Assets/Scripts/ProjectileScript.cs" />
-    <Compile Include="Assets/LowPoly Guns/StarterAssets/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs" />
     <Compile Include="Assets/Scripts/AudioManager.cs" />
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualJoystick.cs" />
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualTouchZone.cs" />
@@ -73,18 +69,13 @@
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualButton.cs" />
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/Utilities/MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" />
-    <Compile Include="Assets/LowPoly Guns/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualButton.cs" />
     <Compile Include="Assets/Scripts/PlayerHealth.cs" />
-    <Compile Include="Assets/LowPoly Guns/StarterAssets/InputSystem/StarterAssetsInputs.cs" />
     <Compile Include="Assets/Scripts/LevelManager.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
-    <Compile Include="Assets/LowPoly Guns/StarterAssets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Scripts/UI Scripts/TeleportBar.cs" />
-    <Compile Include="Assets/StarterAssets/TutorialInfo/Scripts/Readme.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/StarterAssets/license.txt" />
-    <None Include="Assets/LowPoly Guns/StarterAssets/license.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

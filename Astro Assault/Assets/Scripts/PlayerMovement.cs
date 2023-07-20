@@ -6,13 +6,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    float speed = 5;
+    float speed = 10;
     int jumpCount;
     public int teleportCount;
     Rigidbody rb;
     public AudioClip teleportClip;
     public AudioClip jumpClip;
-
 
     private bool facingLeft = false;
     Vector3 leftRotation = new Vector3(0, -90, 0);
@@ -78,6 +77,13 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(speed * Time.deltaTime * axis, 0, 0, Space.World);
     }
 
+    //fed clip from OnFootstep animation event
+    public void OnFootstep(AudioClip clip)
+    {
+        Debug.Log("Footstep called");
+        AudioManager.Instance.PlaySFX(clip);
+    }
+
     public void Jump()
     {
         if(jumpCount > 0)
@@ -103,10 +109,10 @@ public class PlayerMovement : MonoBehaviour
         if (teleportCount > 0)
         {
             AudioManager.Instance.PlaySFX(teleportClip);
-            if (facingLeft) transform.Translate(-3, 0, 0, Space.World);
-            if (facingRight) transform.Translate(3, 0, 0, Space.World);
-            if (facingForward) transform.Translate(0, 0, 3, Space.World);
-            if (facingBack) transform.Translate(0, 0, -3, Space.World);
+            if (facingLeft) transform.Translate(-10, 0, 0, Space.World);
+            if (facingRight) transform.Translate(10, 0, 0, Space.World);
+            if (facingForward) transform.Translate(0, 0, 10, Space.World);
+            if (facingBack) transform.Translate(0, 0, -10, Space.World);
         }
 
         teleportCount--;
