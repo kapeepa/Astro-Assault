@@ -70,7 +70,6 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\TeleportBar.cs" />
     <Compile Include="Assets\Scripts\Voicelinescript.cs" />
-    <Compile Include="Assets\Scripts\Teleportrecharge.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\StarterAssets\license.txt" />
