@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIScript : MonoBehaviour
 {
     public GameObject levelCompleteScreen;
     public GameObject pauseScreen;
+    public GameObject deathScreen;
 
     public PlayerScript playerScript;
-    public bool paused;
 
     private void Awake()
     {
         levelCompleteScreen.SetActive(false);
         pauseScreen.SetActive(false);
-        paused = false;
+        deathScreen.SetActive(false);
     }
 
     public void EnableLvlComplete()
@@ -33,5 +34,11 @@ public class UIScript : MonoBehaviour
     {
         pauseScreen.SetActive(false);
         playerScript.EnablePlayer();
+    }
+
+    public void EnableDeathScreen()
+    {
+        deathScreen.SetActive(true);
+        playerScript.DisablePlayer();
     }
 }

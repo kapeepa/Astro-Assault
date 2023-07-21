@@ -12,7 +12,7 @@ public class ShooterScript : MonoBehaviour
     public bool canShoot = true;
     float timeBetweenShots = 0.75f;
     private float timeUntilNextShot;
-    int ammoCount;
+    public int ammoCount;
 
     private void Start()
     {
@@ -44,7 +44,7 @@ public class ShooterScript : MonoBehaviour
         }
     }
 
-    void ResetAmmo()
+    public void ResetAmmo()
     {
         ammoCount = 5;
     }

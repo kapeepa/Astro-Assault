@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     public HealthBar healthBar;
     public PlayerScript playerScript;
+    public GameManager gameManager;
 
     public AudioClip damageClip;
 
@@ -25,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
     {
         curHealth -= damage;
         healthBar.SetHealth(curHealth);
-        AudioManager.Instance.PlaySFX(damageClip);
+        if(curHealth > 0) AudioManager.Instance.PlaySFX(damageClip);
     }
 
     private void Update()
@@ -33,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
         if (curHealth <= 0)
         {
             playerScript.DisablePlayer();
-            GameManager.Instance.GameOver();
+            gameManager.GameOver();
         }
     }
 }

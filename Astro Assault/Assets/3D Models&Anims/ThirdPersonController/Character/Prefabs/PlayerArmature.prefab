@@ -1189,6 +1189,7 @@ MonoBehaviour:
   maxHealth: 100
   healthBar: {fileID: 0}
   playerScript: {fileID: 4763094857898296357}
+  gameManager: {fileID: 0}
   damageClip: {fileID: 8300000, guid: c02c09b4459484e70b55daf77e477797, type: 3}
 --- !u!114 &1803293632670436520
 MonoBehaviour:
@@ -1268,6 +1269,21 @@ MonoBehaviour:
   onLaserTrigger:
     m_PersistentCalls:
       m_Calls: []
+  onEnemyLaserTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1165966555429630114}
+        m_TargetAssemblyTypeName: PlayerHealth, Assembly-CSharp
+        m_MethodName: DamagePlayer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   landClip: {fileID: 0}
 --- !u!65 &503953988460327528
 BoxCollider:
@@ -1280,8 +1296,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.39597625, y: 1.8214118, z: 0.3194834}
-  m_Center: {x: 0.003530413, y: 0.89346457, z: -0.021871746}
+  m_Size: {x: 0.39597625, y: 1.7845758, z: 0.3194834}
+  m_Center: {x: 0.003530413, y: 0.87504655, z: -0.021871746}
 --- !u!65 &3570138428080945005
 BoxCollider:
   m_ObjectHideFlags: 0

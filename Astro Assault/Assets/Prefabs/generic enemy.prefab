@@ -476,6 +476,7 @@ GameObject:
   - component: {fileID: 1424542910538553148}
   - component: {fileID: 549846976}
   - component: {fileID: 549846974}
+  - component: {fileID: 3119344004414558993}
   m_Layer: 8
   m_Name: generic enemy
   m_TagString: Hazard
@@ -605,6 +606,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   landClip: {fileID: 0}
+--- !u!114 &3119344004414558993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660159886204189523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaf10b8ec3ef4c848313b36e16aa854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laser: {fileID: 3417087577391001974, guid: e0b1468f0d5424eaab7d81dde5ca039a, type: 3}
 --- !u!1 &1816073097072834656
 GameObject:
   m_ObjectHideFlags: 0

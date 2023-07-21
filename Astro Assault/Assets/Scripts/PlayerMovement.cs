@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    float speed = 10;
+    float speed = 15;
     int jumpCount;
     public int teleportCount;
     Rigidbody rb;
@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     //fed clip from OnFootstep animation event
     public void OnFootstep(AudioClip clip)
     {
-        AudioManager.Instance.PlaySFX(clip);
+        AudioManager.Instance.OneShots.PlayOneShot(clip);
     }
 
     public void Jump()
@@ -110,10 +110,10 @@ public class PlayerMovement : MonoBehaviour
         if (teleportCount > 0)
         {
             AudioManager.Instance.PlaySFX(teleportClip);
-            if (facingLeft) transform.Translate(-10, 0, 0, Space.World);
-            if (facingRight) transform.Translate(10, 0, 0, Space.World);
-            if (facingForward) transform.Translate(0, 0, 10, Space.World);
-            if (facingBack) transform.Translate(0, 0, -10, Space.World);
+            if (facingLeft) transform.Translate(-14, 0.1f, 0, Space.World);
+            if (facingRight) transform.Translate(14, 0.1f, 0, Space.World);
+            if (facingForward) transform.Translate(0, 0.1f, 14, Space.World);
+            if (facingBack) transform.Translate(0, 0.1f, -14, Space.World);
         }
 
         teleportCount--;

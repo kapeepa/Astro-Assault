@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource SFXSource;
     public AudioSource MusicSource;
+    public AudioSource OneShots;
 
     private void Awake()
     {
@@ -31,5 +32,11 @@ public class AudioManager : MonoBehaviour
     {
         SFXSource.clip = clip;
         SFXSource.Play();
+    }
+
+    public void PlayOneShots(AudioClip clip)
+    {
+        OneShots.clip = clip;
+        OneShots.Play();
     }
 }

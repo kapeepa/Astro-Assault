@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TeleportBar : MonoBehaviour
 {
     public GameObject bar1, bar2;
+    public PlayerMovement playerMovement;
 
     private void Awake()
     {
@@ -13,15 +14,22 @@ public class TeleportBar : MonoBehaviour
         bar2.SetActive(true);
     }
 
-    public void disableBars()
+    public void RefreshBars()
     {
-        if (!bar2.activeSelf && bar1.activeSelf)
+        switch (playerMovement.teleportCount)
         {
-            bar1.SetActive(false);
-        }
-        else if (bar2.activeSelf)
-        {
-            bar2.SetActive(false);
+            case 2:
+                bar2.SetActive(true);
+                bar1.SetActive(true);
+                break;
+            case 1:
+                bar2.SetActive(false);
+                bar1.SetActive(true);
+                break;
+            case 0:
+                bar2.SetActive(false);
+                bar1.SetActive(false);
+                break;
         }
 
     }

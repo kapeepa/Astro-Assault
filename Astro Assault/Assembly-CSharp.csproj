@@ -71,6 +71,12 @@
     <Compile Include="Assets/Scripts/UI Scripts/TeleportBar.cs" />
     <Compile Include="Assets/Scripts/Voicelinescript.cs" />
     <Compile Include="Assets/Scripts/UIScript.cs" />
+    <Compile Include="Assets/Scripts/Interactable.cs" />
+    <Compile Include="Assets/Scripts/DialogueScript.cs" />
+    <Compile Include="Assets/Scripts/BasicEnemyScript.cs" />
+    <Compile Include="Assets/Scripts/BossScript.cs" />
+    <Compile Include="Assets/Scripts/BossHealth.cs" />
+    <Compile Include="Assets/Scripts/BossHealthBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

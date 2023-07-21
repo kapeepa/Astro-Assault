@@ -13,6 +13,7 @@ public class CollisionScript : MonoBehaviour
 
     public UnityEvent onTrigger;
     public UnityEvent onLaserTrigger;
+    public UnityEvent onEnemyLaserTrigger;
 
     public AudioClip landClip;
     float firstTime;
@@ -52,6 +53,9 @@ public class CollisionScript : MonoBehaviour
         {
             case "Laser":
                 onLaserTrigger.Invoke();
+                break;
+            case "EnemyLaser":
+                onEnemyLaserTrigger.Invoke();
                 break;
             default:
                 if (tag != "Player")
