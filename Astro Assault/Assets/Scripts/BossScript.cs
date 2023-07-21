@@ -9,6 +9,7 @@ public class BossScript : MonoBehaviour
     public GameObject[] spots;
     public AudioClip fireClip;
     public AudioClip teleClip;
+    public AudioClip bossMusic;
 
     public UnityEvent endTimes;
     public GameObject winScreen;
@@ -62,12 +63,13 @@ public class BossScript : MonoBehaviour
                 else counter++;
             }
             if (counter == DiaScript.sources.Length) dialogueDone = true;
-            Debug.Log(dialogueDone);
         }
 
         if(dialogueDone && !coroutineStarted)
         {
             StartCoroutine("Cycle");
+            AudioManager.Instance.PlayMusic(bossMusic);
+            AudioManager.Instance.MusicSource.loop = true;
         }
     }
 
@@ -91,6 +93,8 @@ public class BossScript : MonoBehaviour
     {
         StopAllCoroutines();
         GetComponent<BossScript>().enabled = false;
+        AudioManager.Instance.MusicSource.loop = false;
+        AudioManager.Instance.MusicSource.Stop();
     }
 
     public void EnableWinScreen()

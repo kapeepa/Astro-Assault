@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProjectileScript : MonoBehaviour
 {
     float speed = 40;
-    float duration = 2.5f;
+    float duration = 3.5f;
 
     private void Start()
     {
