@@ -63,20 +63,20 @@
     <Compile Include="Assets/Scripts/UI Scripts/HealthBar.cs" />
     <Compile Include="Assets/Scripts/ProjectileScript.cs" />
     <Compile Include="Assets/Scripts/AudioManager.cs" />
+    <Compile Include="Assets/Scripts/DialogueScript.cs" />
     <Compile Include="Assets/Scripts/CollisionScript.cs" />
+    <Compile Include="Assets/Scripts/Interactable.cs" />
     <Compile Include="Assets/Scripts/PlayerHealth.cs" />
     <Compile Include="Assets/Scripts/LevelManager.cs" />
+    <Compile Include="Assets/Scripts/BossHealthBar.cs" />
     <Compile Include="Assets/Scripts/Camerascript.cs" />
-    <Compile Include="Assets/Scripts/PlayerMovement.cs" />
-    <Compile Include="Assets/Scripts/UI Scripts/TeleportBar.cs" />
-    <Compile Include="Assets/Scripts/Voicelinescript.cs" />
-    <Compile Include="Assets/Scripts/UIScript.cs" />
-    <Compile Include="Assets/Scripts/Interactable.cs" />
-    <Compile Include="Assets/Scripts/DialogueScript.cs" />
     <Compile Include="Assets/Scripts/BasicEnemyScript.cs" />
+    <Compile Include="Assets/Scripts/UIScript.cs" />
+    <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/BossScript.cs" />
     <Compile Include="Assets/Scripts/BossHealth.cs" />
-    <Compile Include="Assets/Scripts/BossHealthBar.cs" />
+    <Compile Include="Assets/Scripts/UI Scripts/TeleportBar.cs" />
+    <Compile Include="Assets/Scripts/Voicelinescript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

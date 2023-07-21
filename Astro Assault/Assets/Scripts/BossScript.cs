@@ -13,16 +13,21 @@ public class BossScript : MonoBehaviour
     public UnityEvent endTimes;
     public GameObject winScreen;
 
+    public DialogueScript DiaScript;
+    bool dialogueDone, coroutineStarted;
+
     private void Start()
     {
+        dialogueDone = false;
+        coroutineStarted = false;
         winScreen.SetActive(false);
         GetComponent<BossScript>().enabled = true;
-        StartCoroutine("Shoot");
     }
 
-    IEnumerator Shoot()
+    IEnumerator Cycle()
     {
-        while (true)
+        coroutineStarted = true;
+        while (dialogueDone)
         {
             for (int i = 0; i < spots.Length; i++)
             {
@@ -41,8 +46,28 @@ public class BossScript : MonoBehaviour
                 yield return new WaitForSeconds(8);
 
                 transform.SetPositionAndRotation(spots[i].transform.position, spots[i].transform.rotation);
-                AudioManager.Instance.PlaySFX(teleClip);
+                AudioManager.Instance.PlayOneShots(teleClip);
             }
+        }
+    }
+
+    private void Update()
+    {
+        if (!dialogueDone)
+        {
+            int counter = 0;
+            for (int i = 1; i <= DiaScript.sources.Length; i++)
+            {
+                if (DiaScript.sources[i-1].isPlaying) dialogueDone = false;
+                else counter++;
+            }
+            if (counter == DiaScript.sources.Length) dialogueDone = true;
+            Debug.Log(dialogueDone);
+        }
+
+        if(dialogueDone && !coroutineStarted)
+        {
+            StartCoroutine("Cycle");
         }
     }
 

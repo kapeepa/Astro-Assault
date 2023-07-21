@@ -58,7 +58,7 @@ public class CollisionScript : MonoBehaviour
                 onEnemyLaserTrigger.Invoke();
                 break;
             default:
-                if (tag != "Player")
+                if (tag != "Player" && tag != "Hazard")
                 {
                     onTrigger.Invoke();
                 }

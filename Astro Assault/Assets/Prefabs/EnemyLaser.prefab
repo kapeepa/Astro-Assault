@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5226651793189637681}
   - component: {fileID: 8557690044303246132}
   - component: {fileID: 7377967202510752380}
+  - component: {fileID: 1060164641759896868}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: EnemyLaser
@@ -113,6 +114,52 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1060164641759896868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473138391303854393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa498deb310e046339a2f22a8e62bd64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCollide:
+    m_PersistentCalls:
+      m_Calls: []
+  onGroundCollide:
+    m_PersistentCalls:
+      m_Calls: []
+  onHazardCollide:
+    m_PersistentCalls:
+      m_Calls: []
+  onPlayerCollide:
+    m_PersistentCalls:
+      m_Calls: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4150746196446008904}
+        m_TargetAssemblyTypeName: ProjectileScript, Assembly-CSharp
+        m_MethodName: DestroyObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onLaserTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  onEnemyLaserTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  landClip: {fileID: 0}
 --- !u!1 &1049014626867491693
 GameObject:
   m_ObjectHideFlags: 0

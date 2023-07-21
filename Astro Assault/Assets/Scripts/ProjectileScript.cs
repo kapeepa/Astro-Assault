@@ -18,4 +18,9 @@ public class ProjectileScript : MonoBehaviour
     {
         transform.Translate(0, 0, speed * Time.deltaTime, Space.Self);
     }
+
+    public void DestroyObject()
+    {
+        Destroy(this.gameObject);
+    }
 }
